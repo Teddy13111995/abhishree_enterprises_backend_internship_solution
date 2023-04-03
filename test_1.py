@@ -32,7 +32,7 @@ def main():
     conn = sqlite3.connect('test_database')
     c = conn.cursor()
     c.execute('''
-              CREATE TABLE IF NOT EXISTS news_articles
+              CREATE TABLE IF NOT EXISTS ddmmyyyy_verge
               ([id] INTEGER PRIMARY KEY, [url] TEXT, [headline] TEXT, [author] TEXT, [date] TEXT)
               ''')
     with open('ddmmyyyy_verge.csv', 'w', newline='') as file:
